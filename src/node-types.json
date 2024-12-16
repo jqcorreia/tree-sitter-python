@@ -2821,6 +2821,10 @@
           "named": true
         },
         {
+          "type": "string_prefix",
+          "named": true
+        },
+        {
           "type": "string_start",
           "named": true
         }
@@ -3686,6 +3690,10 @@
   },
   {
     "type": "string_end",
+    "named": true
+  },
+  {
+    "type": "string_prefix",
     "named": true
   },
   {

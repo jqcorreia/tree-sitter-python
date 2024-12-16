@@ -5472,6 +5472,18 @@
       "type": "SEQ",
       "members": [
         {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "string_prefix"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
           "type": "SYMBOL",
           "name": "string_start"
         },
@@ -6285,6 +6297,10 @@
     {
       "type": "STRING",
       "value": "except"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "string_prefix"
     }
   ],
   "inline": [

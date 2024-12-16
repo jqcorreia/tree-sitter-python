@@ -88,6 +88,7 @@ module.exports = grammar({
     ')',
     '}',
     'except',
+    $.string_prefix
   ],
 
   inline: $ => [
@@ -1072,6 +1073,7 @@ module.exports = grammar({
     ),
 
     string: $ => seq(
+      optional($.string_prefix),
       $.string_start,
       repeat(choice($.interpolation, $.string_content)),
       $.string_end,
